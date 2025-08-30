@@ -3,7 +3,7 @@
 import NxWelcome from './nx-welcome';
 
 import { Route, Routes, Link } from 'react-router-dom';
-
+import { SayHello } from '@nx-monorepo/shared'
 export function App() {
   return (
     <div>
@@ -18,7 +18,7 @@ export function App() {
       <div role="navigation">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Home {SayHello()}</Link>
           </li>
           <li>
             <Link to="/page-2">Page 2</Link>
